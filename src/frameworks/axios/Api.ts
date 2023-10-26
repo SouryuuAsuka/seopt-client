@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const Api = axios.create({
-  baseURL: 'https://test-h2o.lampymarket.com/api/',
+  baseURL: 'https://test-seopt.lampymarket.com/api/',
 })
 
 Api.interceptors.request.use(

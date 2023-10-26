@@ -1,0 +1,44 @@
+.chatForm{
+  &__row{
+    display: flex;
+    padding-top: 15px;
+    box-sizing: border-box;
+    margin: 0 -10px;
+    @media (max-width: 960px) {
+      flex-wrap: wrap;
+    }
+  }
+  &__group{
+    width: 100%;
+    margin: 0 10px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 25px;
+
+    label{
+      padding-bottom: 10px;
+      padding-right: 10px;
+      font-weight: 600;
+      font-family: 'Montserrat';
+      font-size: 18px;
+      @media (max-width: 960px) {
+        font-size: 14px;
+      }
+    }
+  }
+  &__buttons{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    display: flex;
+    justify-content: center;
+
+    @media (max-width: 960px) {
+      flex-wrap: wrap;
+    }
+
+    button{
+      margin-bottom: 20px;
+    }
+  }
+
+}

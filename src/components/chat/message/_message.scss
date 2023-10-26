@@ -1,0 +1,44 @@
+.message{
+  display: flex;
+  &__avatar{
+    display: flex;
+    align-items: flex-end;
+      margin: 5px;
+    img{
+      height: 40px;
+      width: 40px;
+      border-radius: 50%;
+      border: var(--border) 1px solid;
+    }
+  }
+  &__body{
+    width: fit-content;
+    min-width: 30%;
+    max-width: calc(100% - 112px);
+    padding: 5px;
+    margin: 5px;
+    background-color: #fff;
+    border: var(--border) 1px solid;
+    border-radius: 10px;
+  }
+  &__title{
+    font-weight: 700; 
+    font-size: 13px;
+  }
+  &__text{
+    font-size: 13px;
+  }
+  &__footer{
+    font-size: 10px;
+    color: var(--element-text-secondary);
+    text-align: end;
+  }
+  &.question{    
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+
+    .message__body{
+      border-radius: 10px 10px 0 10px;
+    }
+  }
+}
