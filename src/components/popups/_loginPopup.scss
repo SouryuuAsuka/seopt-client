@@ -38,7 +38,6 @@
       width: 50%;
       padding: 10px 0;
       text-align: center;
-      color: var(--element-text-light);
       background-color: var(--background-secondary);
       cursor: pointer;
 
@@ -48,6 +47,7 @@
 
       &.active {
         background-color: var(--background-primary);
+        color: var(--element-text-light);
         &:hover {
           background-color: var(--background-primary-hovered);
         }
@@ -81,11 +81,12 @@
 
     button {
       padding: 15px 10px;
-      margin: 20px -15px -15px;
+      margin: 20px -16px -16px;
       border-radius: 0 0 15px 15px;
       cursor: pointer;
       color: var(--element-text-light);
       background-color: var(--background-primary);
+      border: none;
 
       &:hover {
         background-color: var(--background-primary-hovered);
